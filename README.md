@@ -1,1 +1,0 @@
-# Amaranthus_palmeri_RNA_seq
