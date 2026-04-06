@@ -41,21 +41,21 @@ RNA-Seq-Palmer-Amaranth/
 ├── scripts/
 │   ├── bash/
 │   │   ├── 01_run_fastqc_on_directory.sh    # Quality control
-│   │   ├── 02_trimmomatic_paired_end.sh     # Read trimming (single pair)
-│   │   ├── 03_trimmomatic_batch_submit.sh   # Batch trimming submission
-│   │   ├── 04_build_STAR_index.sh           # Build genome index
-│   │   ├── 05_STAR_align.sh                 # Align reads (single sample)
-│   │   └── 06_STAR_align_batch_submit.sh    # Batch alignment submission
+│   │   ├── 02_trimmomatic_batch_submit.sh   # Batch trimming submission
+│   │   ├── 03_build_STAR_index.sh           # Build genome index
+│   │   ├── 04_STAR_align.sh                 # Align reads
 │   └── R/
 │       ├── 01_DESeq2_differential_expression.R  # DGE analysis
 │       ├── 02_VST_normalization_heatmap.R       # Normalization & visualization
 │       └── 03_WGCNA_coexpression_analysis.R     # Co-expression network
 ├── data/
-│   └── sample_metadata_template.csv
+│   ├── raw_conts_star.csv
+|   ├── metadata1+2+3.csv
+|   └── vst_norm_counts.xlsx
 ├── docs/
 │   └── methods_supplementary.md
 └── results/
-    └── (output files from analyses)
+    └── Discussed in the mansucript
 ```
 
 ## Pipeline Overview
